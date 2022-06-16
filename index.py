@@ -14,7 +14,7 @@ headers = []
 for i in headers_raw:
     if i not in headers:
         headers.append(i)
-data = pd.read_csv (file, encoding="utf-8", header=0, names=headers, usecols=headers)
+data = pd.read_excel (file, encoding="utf-8", header=0, names=headers, usecols=headers)
 df = pd.DataFrame(data, columns=headers)
 
 DB_HOST = "db-postgresql-fra1-91708-do-user-4907952-0.b.db.ondigitalocean.com"
