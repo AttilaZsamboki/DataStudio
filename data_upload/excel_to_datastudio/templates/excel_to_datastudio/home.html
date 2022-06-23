@@ -1,10 +1,18 @@
-{% extends 'excel_to_datastudio/base.html'%}
+{% extends "excel_to_datastudio/base.html" %}
+
+{% load static %}
+
+{% block head %}
+
+<link rel="stylesheet" href="{% static 'excel_to_datastudio/style.css' %}">
+
+{% endblock %}
 
 {% block content %}
 
-<form>
-    <label for="path">Mi a fájlhoz vezető út?</label>
-    <input type="text" id="path" name="path">
-</form>
+<form action="/action_page.php" id="main-form">
+    <input type="file" id="myFile" name="filename">
+    <input type="submit" class="submit-btn">
+  </form>
 
 {% endblock %}

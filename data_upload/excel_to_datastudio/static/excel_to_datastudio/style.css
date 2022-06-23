@@ -1,0 +1,17 @@
+body {
+    background-color:rgb(14, 117, 177);
+}
+
+#main-form {
+  margin: auto;
+  margin-top: 80px;
+  width: 50%;
+  border: 3px solid white;
+  padding: 10px;
+  background-color: grey;
+}
+
+.submit-btn {
+  position: absolute;
+  right: 25%;
+}
